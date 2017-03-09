@@ -1,0 +1,41 @@
+
+{include file="header" title="YunCMS后台管理系统" keywords="" description=""/}
+
+
+<button data-am-smooth-scroll class="am-btn am-btn-success" style="position:fixed;right:200px;bottom:300px;">滚动到顶部</button>
+<button id="doc-scroll-to-btm" class="am-btn am-btn-primary" style="position:fixed;right:200px;bottom:200px;">滚动到底部</button>
+     <!--添加普通广告-->
+     <form action="" method="" class="ad-general ad-form-style" >
+         <h1>添加普通广告</h1>
+         <label>标题：<input class="ad-input-width" type="text" name="ad-general-title"></label><br>
+         <label>链接：<input class="ad-input-width" type="text" name="ad-general-link"></label><br>
+         <label>描述：<textarea class="ad-textarea-width" name="ad-general-description"></textarea></label><br>
+         <input type="submit" class="am-btn am-btn-primary btn-loading-example " value="提交">
+     </form>
+     <!--添加脚本广告-->
+     <form action="" method="" class="ad-script ad-form-style">
+         <h1>添加脚本广告</h1>
+         <label>名称：<input class="ad-input-width" type="text" name="ad-script-name"></label><br>
+         <label>代码：<textarea class="ad-textarea-width" name="ad-script-code"></textarea></label><br>
+         <label>描述：<textarea class="ad-textarea-width" name="ad-script-description"></textarea></label><br>
+         <input type="submit" class="am-btn am-btn-primary btn-loading-example" value="提交">
+     </form>
+     <!--添加幻灯片广告-->
+     <form action="" method="" class="ad-slide ad-form-style">
+         <h1>添加幻灯片广告</h1>
+         <label>幻灯名：<input class="ad-input-width" type="text" name="ad-slide-name"></label><br>
+         <label>幻灯标识：<input class="ad-input-width" type="text" name="ad-slide-code"></label><br>
+         <label>封面：<input class="ad-input-width inputfile-hide" type="file" id="ad-slide-cover" name="ad-slide-cover"></label>
+         <br><img class="input-img-maxsize" src="" id="ad-slide-cover-img" ><br>
+         <label for="ad-slide-cover" class="am-btn am-btn-primary btn-loading-example ad-edit-postion">添加图片</label><br>
+         <label>标题：<input class="ad-input-width" type="text" name="ad-slide-title"></label><br>
+         <label>链接：<input class="ad-input-width" type="text" name="ad-slide-link"></label><br>
+         <label>内容：<textarea class="ad-textarea-width" name="ad-slide-content"></textarea></label><br>
+         <input type="submit" class="am-btn am-btn-primary btn-loading-example" value="提交">
+     </form>
+
+
+
+
+
+{include file="footer" /}

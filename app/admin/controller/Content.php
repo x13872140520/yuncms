@@ -41,7 +41,7 @@ class Content extends AdminBaseController {
     /**
      * @return \think\response\View
      */
-    public function del() {
+    public function delete() {
         return view();
     }
 
@@ -51,4 +51,6 @@ class Content extends AdminBaseController {
     public function trash() {
         return view();
     }
+
+
 }

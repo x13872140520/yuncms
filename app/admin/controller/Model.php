@@ -23,4 +23,7 @@ class Model extends AdminBaseController {
     public function index() {
         return view();
     }
+    public function delete(){
+        return view();
+    }
 }

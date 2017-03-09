@@ -1,4 +1,4 @@
-/*! yuncms v1.0.0 | by yunalading Team | http://www.yunalading.com | (c) 2017 HTTGO, Inc. |  | 2017-03-06"P"12:03:50 UTC */
+/*! yuncms v1.0.0 | by yunalading Team | http://www.yunalading.com | (c) 2017 HTTGO, Inc. |  | 2017-03-09"A"09:03:31 UTC */
 /* ==========================================================================
    Component: Base
  ============================================================================ */
@@ -14723,4 +14723,38 @@ body {
   .footer {
     margin-top: 0;
   }
+}
+.ad-form-style {
+  width: 460px;
+  margin: 100px auto;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.ad-form-style .ad-input-width {
+  width: 360px;
+  height: 40px;
+}
+.ad-form-style .ad-textarea-width {
+  width: 360px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.ad-form-style .inputfile-hide {
+  display: none;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+.ad-form-style .input-img-maxsize {
+  max-width: 360px;
+}
+.ad-form-style .ad-edit-postion {
+  margin: 50px 0 20px;
+}
+.ad-form-style .img-edit-margin {
+  margin: 20px;
 }

@@ -40,4 +40,7 @@ class Ad extends AdminBaseController {
     public function slide() {
         return view();
     }
+    public function edit(){
+        return view();
+    }
 }
