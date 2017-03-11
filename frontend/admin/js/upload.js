@@ -87,3 +87,11 @@ $('#delete-btn').click(function(){
 
     }
 });
+
+//删除事件处理程序
+$("a:has('.am-icon-trash')").click(function(){
+    if(confirm('是否确定删除此项？')){
+        $(this).parent().parent().parent('tr').remove();
+    }
+
+});

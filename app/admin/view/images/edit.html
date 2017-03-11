@@ -1,18 +1,30 @@
 {include file="header" title="YunCMS后台管理系统" keywords="" description=""/}
-<form style="margin:100px;" action="" method="" class="am-form ad-form-style">
-    <fieldset>
+<form action="" method="" class="am-form am-g margin-top-buttom-20" data-am-validator="">
+
         <!--上传图片区域-->
+    <div class="am-form-group all-width">
         <label for="image-upload">上传图片：</label>
-        <input id="image-upload"  class="inputfile-hide" type="file" name="image-upload">
+        <input id="image-upload" class="inputfile-hide" type="file" name="image-upload">
         <br><img src="" id="img" class="input-img-maxsize"><br>
-        <label for="image-upload" class="am-btn am-btn-primary btn-loading-example img-edit-margin"/>添加图片</label><br>
-        <!--图片标题区域-->
-        <label for="image-title" class="img-edit-margin" >图片标题：</label>
-        <input type="text" placeholder="请输入图片标题" id="image-title" name="image-title" >
-        <!--图片描述区域-->
-        <label for="image-description" class="img-edit-margin" >图片描述：</label><textarea type="text"  rows="6" placeholder="请输入图片描述" id="image-description" name="image-description"></textarea>
-        <input type="submit" class="am-btn am-btn-primary btn-loading-example img-edit-margin" value="提交"  />
-    </fieldset>
+        <label for="image-upload" class="am-btn am-btn-primary margin-top-buttom-20"/>添加图片</label><br>
+    </div>
+    <!--图片标题区域-->
+    <div class="am-form-group all-width">
+        <label for="image-title">图片标题：</label>
+        <input type="text" id="image-title" name="image-title" placeholder="请输入图片标题" maxlength="20" required>
+    </div>
+    <!--图片标题地址-->
+    <div class="am-form-group all-width">
+        <label for="image-url">图片地址：</label>
+        <input type="text" id="image-url" name="image-url"placeholder="请输入图片地址" maxlength="255" required>
+    </div>
+    <!--图片描述区域-->
+    <div class="am-form-group all-width">
+        <label for="image-description">图片描述：</label>
+        <textarea type="text" placeholder="请输入图片描述" id="image-description" name="image-description" maxlength="200"></textarea>
+    </div>
+        <button class="am-btn am-btn-primary button-text-left ">提交</button>
+
 </form>
 
 

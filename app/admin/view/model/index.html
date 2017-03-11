@@ -1,10 +1,11 @@
 {include file="header" title="YunCMS后台管理系统" keywords="" description=""/}
 
-{include file="footer" /}
+
 <div class="content-page">
     <div class="am-container">
+        <div class="min-height">
         <div class="page-title"><h1 class="am-inline">模型列表</h1>
-            <a href="#" class="am-btn am-btn-primary am-btn-xs am-radius">
+            <a href="/index.php/admin/model/edit" class="am-btn am-btn-primary am-btn-xs am-radius">
                 <i class="am-icon am-icon-edit"></i>添加模型
             </a>
             <a href="/index.php/admin/model/delete" class="am-btn am-btn-default am-btn-xs am-radius">
@@ -37,7 +38,7 @@
                 <td>--</td>
                 <td><a href="#">5</a></td>
                 <td>2017-1-18 15:43:26</td>
-                <td><a href="#">未发布</a></td>
+
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
                         <a href="#" class="am-btn am-btn-primary am-radius"><i class="am-icon-edit"></i></a>
@@ -52,7 +53,7 @@
                 <td><a href="#">gulp</a>、<a href="#">nodejs</a></td>
                 <td><a href="#">20</a></td>
                 <td>2017-1-28 15:43:26</td>
-                <td><a href="#">已发布</a></td>
+
                 <td>
                     <div class="am-btn-group am-btn-group-xs">
                         <a href="#" class="am-btn am-btn-primary am-radius"><i class="am-icon-edit"></i></a>
@@ -62,7 +63,8 @@
             </tr>
             </tbody>
         </table>
-        <ul class="am-pagination am-pagination-right">
+        </div>
+        <ul class="am-pagination am-pagination-right paging-center">
             <li class="am-disabled"><a href="#">&laquo;</a></li>
             <li class="am-active"><a href="#">1</a></li>
             <li><a href="#">2</a></li>

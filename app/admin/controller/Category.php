@@ -26,4 +26,7 @@ class Category extends AdminBaseController {
     public function delete(){
         return view();
     }
+    public function edit(){
+        return view();
+    }
 }

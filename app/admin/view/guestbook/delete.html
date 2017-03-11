@@ -3,6 +3,7 @@
 {include file="footer" /}
 <div class="content-page">
     <div class="am-container">
+        <div class="min-height">
         <div class="page-title"><h1 class="am-inline">留言列表</h1>
             <a href="#" class="am-btn am-btn-default am-btn-xs am-radius">
                 <i class="am-icon-trash"></i>回收站
@@ -63,19 +64,17 @@
             </tr>
             </tbody>
         </table>
-
-
-
-
-        <a href="javascript:" id="allcheck">全选</a>
-        <a href="javascript:" id="notallcheck">全不选</a>
-        <input type="button" value="删除" id="delete-btn" class="am-btn am-btn-primary">
-        <div id="delete-list">
-
         </div>
 
 
-        <ul class="am-pagination am-pagination-right">
+        <div class="margin-1p5 display-ib">
+            <a href="javascript:" id="allcheck">全选</a>
+            <a href="javascript:" id="notallcheck">全不选</a>
+            <input type="button" value="删除" id="delete-btn" class="am-btn am-btn-primary">
+        </div>
+
+
+        <ul class="am-pagination am-pagination-right paging-center">
             <li class="am-disabled"><a href="#">&laquo;</a></li>
             <li class="am-active"><a href="#">1</a></li>
             <li><a href="#">2</a></li>

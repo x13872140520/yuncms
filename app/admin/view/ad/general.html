@@ -1,13 +1,14 @@
 {include file="header" title="YunCMS后台管理系统" keywords="" description=""/}
 
-{include file="footer" /}
+
 <div class="content-page">
     <div class="am-container">
+        <div class="min-height">
         <div class="page-title"><h1 class="am-inline">普通广告列表</h1>
             <a href="/index.php/admin/ad/edit" class="am-btn am-btn-primary am-btn-xs am-radius">
                 <i class="am-icon am-icon-edit"></i>添加广告
             </a>
-            <a href="#" class="am-btn am-btn-default am-btn-xs am-radius">
+            <a href="/index.php/admin/ad/delete" id="general-ad" class="am-btn am-btn-default am-btn-xs am-radius">
                 <i class="am-icon-trash"></i>回收站
             </a>
         </div>
@@ -63,7 +64,11 @@
             </tr>
             </tbody>
         </table>
-        <ul class="am-pagination am-pagination-right" style="text-align:center;">
+        </div>
+
+
+
+        <ul class="am-pagination am-pagination-right paging-center">
 
             <li class="am-disabled"><a href="#">&laquo;</a></li>
             <li class="am-active"><a href="#">1</a></li>
