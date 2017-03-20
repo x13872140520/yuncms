@@ -18,4 +18,7 @@ class Edu extends AdminBaseController {
     public function level() {
         return view();
     }
+    public function edit() {
+        return view();
+    }
 }

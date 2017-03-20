@@ -26,4 +26,15 @@ class Member extends AdminBaseController {
     public function delete(){
         return view();
     }
+
+    public function logout() {
+
+    }
+
+    /**
+     * @return \think\response\View
+     */
+    public function myinfo() {
+        return view();
+    }
 }

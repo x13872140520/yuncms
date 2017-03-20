@@ -4,62 +4,21 @@
 
      <!--添加普通广告-->
      <form action="" method="" class="am-form am-g margin-top-buttom-20" id="ad-general" data-am-validator="">
+         {:token()}
          <div class="am-form-group all-width">
-         <h1>添加普通广告</h1>
-             <label for="ad-general-ident">普通广告标识：</label><input type="text" name="ad-general-ç"
-                                                             id="ad-general-ident" maxlength="100" required><br>
-             <label for="ad-general-title">标题：</label><input type="text" name="ad-general-title"
-                                                             id="ad-general-title" maxlength="20" required><br>
-             <label for="ad-general-link">链接：</label><input type="text" name="ad-general-link" id="ad-general-link" maxlength="500" required><br>
-             <label for="ad-general-description">描述：</label><textarea class="ad-textarea-width"
-                                                                      name="ad-general-description"
-                                                                      id="ad-general-description" maxlength="200"></textarea><br>
-             <input type="submit" class="am-btn am-btn-primary btn-loading-example " value="提交">
+             <h1>添加普通广告</h1>
+             <label for="ad-general-ident">普通广告标识：</label><input type="text" name="ad-general-ç" id="ad-general-ident" maxlength="100" required>
+         </div>
+         <div class="am-form-group all-width">
+             <label for="ad-general-title">标题：</label><input type="text" name="ad-general-title" id="ad-general-title" maxlength="20" required>
+         </div>
+         <div class="am-form-group all-width">
+             <label for="ad-general-link">链接：</label><input type="text" name="ad-general-link" id="ad-general-link" maxlength="500" required>
+         </div>
+         <div class="am-form-group all-width">
+         <label for="ad-general-description">描述：</label><textarea class="ad-textarea-width" name="ad-general-description" id="ad-general-description" maxlength="200"></textarea><input type="submit" class="am-btn am-btn-primary btn-loading-example " value="提交">
          </div>
      </form>
-     <!--添加脚本广告-->
-     <form action="" method="" class="am-form am-g margin-top-buttom-20" id="ad-script" data-am-validator="">
-         <div class="am-form-group all-width">
-             <h1>添加脚本广告</h1>
-             <label for="ad-script-ident">脚本广告标识：</label>
-             <input type="text" name="ad-script-ident" id="ad-script-ident" maxlength="100" required><br>
-             <label for="ad-script-name">名称：</label><input class="ad-input-width" type="text" name="ad-script-name"
-                                                           id="ad-script-name" maxlength="50" required><br>
-             <label for="ad-script-code">代码：</label><textarea class="ad-textarea-width" name="ad-script-code"
-                                                              id="ad-script-code" maxlength="5000" required></textarea>
-             <label for="ad-script-description">描述：</label><textarea class="ad-textarea-width"
-                                                                     name="ad-script-description"
-                                                                     id="ad-script-description"
-                                                                     maxlength="200"></textarea>
-             <input type="submit" class="am-btn am-btn-primary btn-loading-example" value="提交">
-         </div>
-     </form>
-     <!--添加幻灯片广告-->
-     <form action="" method="" class="am-form am-g margin-top-buttom-20"id="ad-slide" data-am-validator="">
-         <div class="am-form-group all-width">
-             <h1>添加幻灯片广告</h1>
-             <label for="ad-slide-name">幻灯名：</label>
-             <input type="text" name="ad-slide-name" id="ad-slide-name" max="200" required><br>
-             <label for="ad-slide-ident">幻灯标识：</label>
-             <input type="text" name="ad-slide-ident" id="ad-slide-ident" max="100" required><br>
-             <label for="ad-slide-cover">封面：</label>
-             <input class=" inputfile-hide" type="file" id="ad-slide-cover" name="ad-slide-cover" maxlength="200" required>
-             <br><img class="input-img-maxsize" src="" id="ad-slide-cover-img"><br>
-             <label for="ad-slide-cover" class="am-btn am-btn-primary btn-loading-example ad-edit-postion">添加图片</label><br>
-             <label for="ad-slide-title">标题：</label>
-             <input type="text" name="ad-slide-title" id="ad-slide-title" maxlength="20"><br>
-             <label for="ad-slide-link">链接：</label>
-             <input type="text" name="ad-slide-link" id="ad-slide-link" maxlength="500" required><br>
-             <label for="ad-slide-desc">描述：</label>
-             <textarea type="text" name="ad-slide-desc" id="ad-slide-desc" maxlength="200" required></textarea><br>
-             <label for="ad-slide-content">内容：</label>
-             <textarea class="ad-textarea-width" name="ad-slide-content" id="ad-slide-content"></textarea><br>
-             <input type="submit" class="am-btn am-btn-primary btn-loading-example" value="提交">
-         </div>
-     </form>
-
-
-
 
 
 {include file="footer" /}

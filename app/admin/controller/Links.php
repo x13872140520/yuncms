@@ -23,4 +23,10 @@ class Links extends AdminBaseController {
     public function index() {
         return view();
     }
+    public function edit() {
+        return view();
+    }
+    public function delete() {
+        return view();
+    }
 }

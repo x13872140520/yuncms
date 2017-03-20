@@ -1,0 +1,47 @@
+{include file="header" title="YunCMS后台管理系统" keywords="" description=""/}
+<!--信息展示页面-->
+<form id="admin-info-form" data-am-validator="">
+    {:token()}
+<ul class="admin-info all-width ad-edit-postion" id="admin-info-ul" >
+
+    <li><p><img src="" alt=""></p> <span class="adminname">ok9591<i class="am-btn am-btn-primary am-radius am-icon-edit" id="pwd-reset">修改密码</i></span></li>
+    <li><p>昵称：</p><input type="text" class="remove-input" name="admin-info-name" value="等风来" disabled maxlength="50" ><a href="#" class="admin-info-edit">编辑</a></li>
+    <li><p>手机：</p><span>13872140520</span><a id="phone-verify">未验证</a></li>
+    <li><p>邮箱：</p><span>364044599@qq.com</span><a id="email-verify">未验证</a></li>
+    <li><p>QQ：</p><input type="text" class="remove-input" name="admin-info-qq" value="364044599" disabled maxlength="15" ><a href="#" class="admin-info-edit">编辑</a></li>
+    <li><p>详细地址：</p><input type="text" class="remove-input" name="admin-info-address" value="湖北省大冶市" disabled maxlength="200"><a href="#" class="admin-info-edit">编辑</a></li>
+    <li><p>性别：</p><span id="admin-sex">男</span><a href="#" class="admin-info-sex-edit">编辑</a></li>
+    <li><p>生日：</p><input type="text" class="remove-input" name="admin-info-birthday" value="1989.11.10" disabled><a href="#" class="admin-info-edit">编辑</a></li>
+    <li><p>简介：</p><textarea type="text" class="remove-input" name="admin-info-birthday" disabled maxlength="200">大家好我是周帝</textarea><a href="#" class="admin-info-edit">编辑</a></li>
+
+</ul>
+</form>
+<!--密码重置表单-->
+<form class="pwd-reset-form am-form am-g margin-top-buttom-20" id="pwd-reset-form" data-am-validator="">
+    {:token()}
+    <div class="am-form-group all-width">
+        <label for="admin-old-password">请输入旧密码:</label>
+        <input type="text" name="admin-old-password" id="admin-old-password" maxlength="200"placeholder="请输入旧密码" required>
+    </div>
+    <div class="am-form-group all-width">
+        <label for="admin-new-password-first">请输入新密码:</label>
+        <input type="text" name="admin-new-password-first" id="admin-new-password-first" maxlength="200"placeholder="请输入新密码" required>
+    </div>
+    <div class="am-form-group all-width">
+        <label for="admin-old-password-second">请重新输入新密码:</label>
+        <input type="text" name="admin-old-password-second" id="admin-old-password-second" maxlength="200"placeholder="请重新输入新密码" required>
+    </div>
+    <button class="am-btn am-btn-primary button-text-left" >提交</button>
+</form>
+<!--性别选择页面-->
+<form class="sex-choice" >
+    <p>请选择性别</p>
+    <ul>
+        <li><label for="man">男</label><input type="radio" name="admin-sex" id="man" value="man" checked></li>
+        <li><label for="woman">女</label><input type="radio" name="admin-sex" id="woman" value="woman" ></li>
+
+    </ul>
+</form>
+
+{include file="footer" /}
+<!-- <input type="text" name="admin-info-name" id="admin-info-name" value="等风来">-->

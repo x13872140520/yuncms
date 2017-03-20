@@ -47,18 +47,27 @@ gulp.task('build:core-js', function () {
 });
 
 gulp.task('build:core-less', function () {
-    gulp.src('./frontend/core/less/core.less').pipe(sourcemaps.init()).pipe($.header(banner, {
+    gulp.src('./frontend/core/less/core.less').pipe(sourcemaps.init())
+        .pipe($.header(banner, {
         pkg: pkg,
         ver: ''
-    })).pipe($.plumber({
+    }))
+        .pipe($.plumber({
         errorHandler: function (err) {
             console.log(err);
             this.emit('end');
         }
-    })).pipe($.less()).pipe($.autoprefixer({browsers: config.AUTOPREFIXER_BROWSERS})).pipe(gulp.dest('./public/static/core/css')).pipe(minify()).pipe($.rename({
+    }))
+        .pipe($.less())
+        .pipe($.autoprefixer({browsers: config.AUTOPREFIXER_BROWSERS}))
+        .pipe(gulp.dest('./public/static/core/css'))
+        .pipe(minify())
+        .pipe($.rename({
         'suffix': '.min',
         'extname': '.css'
-    })).pipe(sourcemaps.write('./')).pipe(gulp.dest('./public/static/core/css'));
+    }))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./public/static/core/css'));
 });
 
 gulp.task('build:admin-js', function () {

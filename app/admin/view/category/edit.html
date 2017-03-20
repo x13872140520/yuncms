@@ -1,5 +1,6 @@
 {include file="header" title="YunCMS后台管理系统" keywords="" description=""/}
 <form class="am-form am-g margin-top-buttom-20" data-am-validator>
+    {:token()}
     <div class="am-form-group all-width">
         <label for="cate-name">分类名称:</label>
         <input type="text" name="cate-name" id="cate-name" maxlength="20" minlength="3" placeholder="请输入分类名称" required>

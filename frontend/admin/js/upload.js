@@ -42,7 +42,18 @@ $(function () {
         var objUrl = getObjectURL(this.files[0]);
         console.log("objUrl = " + objUrl);
         if (objUrl) {
-            $("#ad-slide-cover-img").attr("src", objUrl);
+            $("#page-img").attr("src", objUrl);
+        }
+    });
+});
+
+//将取得的url传入html代码中的img的src中，实现图片上传预览。此段在友情链接添加起作用
+$(function () {
+    $("#links-icon").change(function () {
+        var objUrl = getObjectURL(this.files[0]);
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#links-img").attr("src", objUrl);
         }
     });
 });
@@ -88,10 +99,50 @@ $('#delete-btn').click(function(){
     }
 });
 
-//删除事件处理程序
-$("a:has('.am-icon-trash')").click(function(){
+//列表中的icon-trash删除事件处理程序
+$('.am-btn-group-xs').children("a:has('.am-icon-trash')").click(function(){
     if(confirm('是否确定删除此项？')){
         $(this).parent().parent().parent('tr').remove();
     }
+
+});
+//列表中给icon-edit添加编辑事件，让所有td处于可编辑状态
+// $('.am-btn-group-xs').children("a:has('.am-icon-edit')").click(function(){
+//    $(this).parent().parent('td').prevAll().each(function(){
+//        var txt=[];
+//        txt.append($(this).text());
+//        $(this).append("tex[0]");
+//    });
+//
+// });
+
+//密码重置页面交互
+$("#pwd-reset").click(function(){
+    $(".admin-info").hide();
+    $("#pwd-reset-form").show();
+});
+
+
+//admin信息 input text类型修改页面
+$(".admin-info-edit").click(function(){
+    var inputObj=$(this).prev()
+    inputObj.removeAttr("disabled");
+    inputObj.select();
+    inputObj.removeClass("remove-input");
+    inputObj.blur(function(){
+        inputObj.addClass("remove-input");
+        /*ajax代码*/
+        inputObj.attr("disabled","disabled");
+    });
+});
+//admin信息性别类型修改页面
+$(".admin-info-sex-edit").click(function(){
+    $(".sex-choice").toggle();
+    $(".sex-choice li").click(function(){
+        /*ajax代码*/
+        var lisText=$(this).children('label').html();
+        $("#admin-sex").html(lisText);
+        $(".sex-choice").hide();
+    });
 
 });
